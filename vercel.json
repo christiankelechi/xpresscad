@@ -1,0 +1,22 @@
+{
+    "builds": [
+      {
+        "src": "zenia/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "zenia/wsgi.py",
+        "methods": [
+          "GET",
+          "POST",
+          "PUT",
+          "PATCH",
+          "DELETE",
+          "OPTIONS"
+      ]
+      }
+    ]
+}

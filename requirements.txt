@@ -32,6 +32,8 @@ pyttsx4
 cadquery
 setuptools
 cadquery-ocp
-numpy==1.26.4
+# numpy==1.26.4
+numpy
 psycopg2_binary
 kittycad
+huggingface-hub
